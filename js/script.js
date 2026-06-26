@@ -27,9 +27,13 @@ function TimKiem() {
     <div class="card-body">
     <h4 class="card-title">${sanPham.tenSP}</h4>
     <p><b>maSP:</b> ${sanPham.maSP}</p>
-    <p><b>giaSP:</b> ${sanPham.giaSP}</p>
+    <p><b>giaSP:</b> ${sanPham.giaSP.toLocaleString()} VND</p>
     <p><b>moTa:</b> ${sanPham.moTa}</p>
     </div>
-    </div>
-;
+    
+    function hienThiMauSac(mausac) {
+    let select = document.getElementById("selectMau");
+    let hinhAnh = document.getElementById("hinhAnh");
+    hinhAnh.src = "images/" + mausac.hinhAnh;
+
 }
